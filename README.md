@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Notes App repository! This project is a lightweight, feature-rich application designed to help users create, organize, and manage their notes efficiently.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Secure login and signup.
+- **Create Notes**: Add new notes with titles and content.
+- **Edit Notes**: Update existing notes effortlessly.
+- **Delete Notes**: Remove notes when no longer needed.
+- **Search and Filter**: Quickly find notes using keywords.
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, HTML5, CSS3
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Tools**: Postman (API testing), Git (version control)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/brijendra04/Notes-App.git
+   cd Notes-App
+   ```
 
-### `npm run build`
+2. Install dependencies for both frontend and backend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   # Install backend dependencies
+   cd backend
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   # Install frontend dependencies
+   cd ../frontend
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Configure environment variables:
 
-### `npm run eject`
+   Create a `.env` file in the `backend` directory and add the following:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```env
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   PORT=5000
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   # Start backend
+   cd backend
+   npm run dev
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   # Start frontend
+   cd ../frontend
+   npm start
+   ```
 
-## Learn More
+5. Open your browser and navigate to `http://localhost:3000` to use the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```plaintext
+Notes-App/
+├── backend/         # Backend code
+│   ├── models/      # Database models
+│   ├── routes/      # API routes
+│   ├── controllers/ # Business logic
+│   └── server.js    # Entry point for backend
+├── frontend/        # Frontend code
+│   ├── src/         # React components and pages
+│   ├── public/      # Static files
+│   └── package.json # Frontend dependencies
+├── README.md        # Project documentation
+└── .gitignore       # Ignored files
+```
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! Please follow these steps:
 
-### Analyzing the Bundle Size
+1. Fork the repository.
+2. Create a feature branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   git checkout -b feature-name
+   ```
 
-### Making a Progressive Web App
+3. Commit your changes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   git commit -m "Add feature description"
+   ```
 
-### Advanced Configuration
+4. Push to your branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   git push origin feature-name
+   ```
 
-### Deployment
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+
+For questions or collaboration, feel free to reach out:
+
+- GitHub: [brijendra04](https://github.com/brijendra04)
+- LinkedIn: [Brijendra](https://www.linkedin.com/in/brijendra30/)
